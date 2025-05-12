@@ -142,6 +142,7 @@ open class MediaPicker: UIViewController {
             break
 
         case .authorized, .limited:
+            let isFetched = self.storeManager.fetchAssets
             reloadCollectionView()
 
             onFetchCompletion?(storeManager.assets?.count ?? 0, authorisationStatus)
