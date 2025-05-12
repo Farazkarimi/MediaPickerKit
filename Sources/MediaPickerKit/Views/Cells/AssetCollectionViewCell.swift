@@ -22,7 +22,7 @@ public protocol MPAssetCollectionViewCellDelegate: AnyObject {
 /// Media Picker asset cell
 public class AssetCollectionViewCell: UICollectionViewCell {
 
-    static let id = "MPAssetCollectionViewCell"
+    static let id = "AssetCollectionViewCell"
 
     /// Main asset thumbnail image
     private lazy var assetThumbnailView: UIImageView = {
